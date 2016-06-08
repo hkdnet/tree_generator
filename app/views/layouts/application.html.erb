@@ -9,6 +9,27 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">TreeGenerator(仮)</h1>
+        </div>
+      </div>
+    </header>
+    <div class="section">
+      <%= yield %>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            Copyright (C) <%= DateTime.now.strftime('%Y') %> hkdnet All Rights Reserved.
+          </p>
+          <p>
+            <%= fa_icon "twitter", text: "@hkdnet" %>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
