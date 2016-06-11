@@ -1,18 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
+<p class="title">
   <%= @tree.title %>
 </p>
 
 <p>
-  <strong>Raw text:</strong>
   <%= @tree.raw_text %>
-</p>
-
-<p>
-  <strong>Root:</strong>
-  <%= @tree.root %>
 </p>
 
 <%= link_to 'Edit', edit_tree_path(@tree) %> |
