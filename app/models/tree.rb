@@ -14,7 +14,6 @@ class Tree < ApplicationRecord
   end
 
   def text_to_nodes!
-    return unless root.nil?
     return if node_texts.empty?
     build_root(text: node_texts.first.text)
     node_texts.drop(1).reduce(ParseInfo.new(0, root)) do |info, node_text|
